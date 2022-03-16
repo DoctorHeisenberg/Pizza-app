@@ -19,7 +19,7 @@ namespace Pizza_app
             {
                 StringBuilder pizzaTopping = new();
 
-                foreach (var topping in pizza.toppings)
+                foreach (var topping in pizza.toppings.OrderBy(x => x))
                 {
                     pizzaTopping.AppendFormat(topping + ", ");
                 }
